@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AlienInvasionGame"
+             x:Class="AlienInvasionGame.MainPage"
+             BackgroundColor="{DynamicResource backgroundColor}">
+
+
+
+    <StackLayout Margin="30" >
+        <!-- Place new controls here -->
+        <Image Source="alien.png" HeightRequest="200" WidthRequest="200" />
+        <Button x:Name="HighScoresPagebutton" Text="High Scores" Clicked="HighScoresPagebutton_Clicked" 
+                HorizontalOptions="Center"
+                VerticalOptions="Center" CornerRadius="20"/>
+
+        <Label 
+               TextColor="{DynamicResource textColor}" FontAttributes="Italic"
+                HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               
+               >
+            <Label.Text>
+               Aliens have invaded Earth!
+               You must escape it is your destiny from birth...
+               though they are hard to spot,
+               they hide behind a door,
+               run away escape and fear them no more!
+            </Label.Text>
+        </Label>
+
+
+        <Button x:Name="EscapeButton" Text="Escape!" Clicked="EscapeButton_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                CornerRadius="20"/>
+
+        
+
+
+        <StackLayout Orientation="Horizontal" Spacing="40">
+
+            <StackLayout>
+                <Button x:Name="Theme1" Text="Theme1" Clicked="Theme1_Clicked" CornerRadius="20"  />
+                
+            </StackLayout>
+
+            <StackLayout>
+                <Button x:Name="Theme2" Text="Theme2" Clicked="Theme2_Clicked" CornerRadius="20" />
+            </StackLayout>
+
+
+            <StackLayout>
+                <Button x:Name="Theme3" Text="Theme3" Clicked="Theme3_Clicked" CornerRadius="20" />
+            </StackLayout>
+        
+            
+        </StackLayout>
+            
+    </StackLayout>
+     
+
+
+</ContentPage>

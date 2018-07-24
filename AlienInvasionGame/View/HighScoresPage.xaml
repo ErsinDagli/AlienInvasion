@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlienInvasionGame.HighScoresPage"
+             BackgroundColor="{DynamicResource backgroundColor}">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="50" Margin="30">
+            
+            <Label x:Name="HighScoreTag" Text="High Score:" FontSize="Large" FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <Label x:Name="HighScoreLabel"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="50" FontAttributes="Bold"
+                   
+                   TextColor="White"/>
+           
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
